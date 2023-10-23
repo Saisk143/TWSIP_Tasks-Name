@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrabadi landing page</title>
+
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    header{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(hyderabadbg.jpg);
+    }
+    nav{
+        width: 100%;
+        height: 80px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: black;
+        position:fixed;
+    }
+    .logo{
+
+        font-size: 2em;
+        letter-spacing: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .logo span{
+        color: red;
+        font-weight: bold;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        position: relative;
+    }
+    .menu a:hover{
+        border: 2px solid indianred;
+        transition: 0.5s linear;
+    }
+
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: red;
+        border-radius: 5px;
+        position: relative;
+  
+    }
+    .register a:hover{
+        border: 2px solid white;
+        background-color: rgba(233, 9, 9, 0.918);
+
+    }
+
+    .main-heading{
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50px);
+        text-align: center;
+        color: white;
+    }
+    .main-heading span{
+        letter-spacing: 2px;
+    }
+    .main-heading h1{
+        font-size: 4em;
+    }
+
+    .main-heading h1 span{
+        color: red;
+        font-weight: bold;
+    }
+    .main-heading button{
+        text-decoration: none;
+        background : red;
+        padding: 10px 20px;
+        letter-spacing: 2px;
+        color: white;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 0px;
+        cursor: pointer;
+
+    }
+
+    .main-heading button:hover{
+        border: 1px solid white;
+        transition: 0.5s linear;
+        background-color: rgba(231, 28, 28, 0.863);
+    }
+    .about{
+        padding: 5px;
+        background-color: white;
+        padding: 50px 12px;
+        font-size: 22px;
+        max-height: 50%;
+    }
+    .row{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 50px 50px;
+    }
+    .text-col{
+        flex-basis: 50%;
+        margin-bottom: 5%;
+    }
+    .img-col{
+        flex-basis: 50%;
+        margin-bottom: 10%;
+    }
+    .img-col img{
+        display: block;
+        width: 90%;
+        margin: auto;}
+
+
+    .border-top{
+        padding: 50px 15px 10px;
+        border-top: 6px solid #eed2d2;
+    }
+
+</style>
+
+
+</head>
+<body>
+    <header id="home-container">
+        <nav >
+            <div class="logo" >
+                Hydra<span>Ba</span>di
+            </div>
+            <div class="menu">
+                <a href="#home-container">Home</a>
+                <a href="#about-conatiner">About</a>
+                <a href="#features-conatiner">Features</a>
+                <a href="#contact-conatiner">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Rigister</a>
+            </div>
+        </nav>
+        <section class="main-heading">
+            <span>Enjoy</span>
+            <h1>Hydra<span>Ba</span>di Travel Agency</h1>
+            <br>
+            <button>Book you trip</button>
+        </section>
+    </header>
+
+
+
+    <div id="about-conatiner" class="about border-top">
+        <div class="row">
+            <div class="text-col">
+                <h2>About</h2>
+                <br>
+                <p>At Hyderabad Tourism, we are committed to making your visit to this remarkable city an unforgettable experience. Explore our website to find information on accommodation, travel tips, and itineraries to make the most of your trip to Hyderabad.
+                    <br>
+                    <br>
+                    Discover the magic of Hyderabad, where tradition meets modernity, and immerse yourself in an adventure you'll cherish for a lifetime.</p>
+            </div>
+            <div class="img-col">
+                <img src="img 1a.png" >
+            </div>
+        </div>
+    </div>
+
+    <div id="features-conatiner" class="about border-top">
+        <div class="row">
+            <div class="img-col">
+                <img src="tourism.jpg" >
+            </div>
+            <div class="text-col">
+                <h2>Features</h2>
+                <br>
+                <p>Whether you're a history buff, a foodie, a nature lover, or an adventure seeker, Hyderabad has something to offer everyone. Explore the bustling markets of Laad Bazaar, take a boat ride on the picturesque Hussain Sagar Lake, or immerse yourself in the world of science at the Nehru Zoological Park.</p>
+            </div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
